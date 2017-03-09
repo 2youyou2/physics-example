@@ -4,11 +4,7 @@ window.addComponent = function (node, component) {
     node._components.push(component);
 
     if (node._activeInHierarchy) {
-        if (typeof component.__preload === 'function') {
-            cc.director._compScheduler.doPreloadComp(component);
-        }
-        // call onLoad/onEnable
-        cc.director._compScheduler.activateComp(component);
+        cc.director._nodeActivator.activateComp(component);
     }
 
     return component;
