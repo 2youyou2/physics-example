@@ -27,7 +27,7 @@ cc.Class({
 
     rayCast: function (p1, p2) {
         var manager = cc.director.getPhysicsManager();
-        var result = manager.rayCast(p1, p2);
+        var result = manager.rayCast(p1, p2)[0];
 
         if (result) {
             p2 = result.point;

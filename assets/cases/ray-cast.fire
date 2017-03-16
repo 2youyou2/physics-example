@@ -315,6 +315,7 @@
     "_enableWrapText": false,
     "_N$file": null,
     "_isSystemFontUsed": true,
+    "_spacingX": 0,
     "_N$string": "Closest",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
@@ -480,7 +481,7 @@
       "__id__": 10
     },
     "_enabled": true,
-    "_lineWidth": 1,
+    "_lineWidth": 2,
     "_strokeColor": {
       "__type__": "cc.Color",
       "r": 0,
@@ -636,6 +637,7 @@
     "_enableWrapText": false,
     "_N$file": null,
     "_isSystemFontUsed": true,
+    "_spacingX": 0,
     "_N$string": "Any",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
@@ -864,6 +866,7 @@
     "_enableWrapText": false,
     "_N$file": null,
     "_isSystemFontUsed": true,
+    "_spacingX": 0,
     "_N$string": "All",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,

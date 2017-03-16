@@ -31,16 +31,14 @@ cc.Class({
 
         if (this.rayCastType === cc.RayCastType.Closest ||
             this.rayCastType === cc.RayCastType.Any) {
-            if (results) {
-                p2 = results.point;
+            if (results[0]) {
+                p2 = results[0].point;
             }
-            this.ctx.circle(p2.x, p2.y, 5);
         }
-        else {
-            results.forEach(result => {
-                this.ctx.circle(result.point.x, result.point.y, 5);
-            });    
-        }
+
+        results.forEach(result => {
+            this.ctx.circle(result.point.x, result.point.y, 5);
+        });    
         
         this.ctx.fill();
 

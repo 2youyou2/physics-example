@@ -8,8 +8,8 @@ cc.Class({
     },
     
     _applyForce: function (body) {
-        let position = body.getPosition();
-        let center = this.body.getPosition();
+        let position = body.getWorldPosition();
+        let center = this.body.getWorldPosition();
 
         let f = center.sub( position ).normalize().mul(this.gravityForce * body.mass);
 

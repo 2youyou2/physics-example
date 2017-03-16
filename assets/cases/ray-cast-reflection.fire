@@ -220,7 +220,7 @@
       "__id__": 5
     },
     "_enabled": true,
-    "_lineWidth": 1,
+    "_lineWidth": 2,
     "_strokeColor": {
       "__type__": "cc.Color",
       "r": 0,
