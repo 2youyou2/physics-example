@@ -7,9 +7,9 @@ cc.Class({
             type: cc.Label
         },
 
-        body: {
-            default: null,
-            type: cc.RigidBody
+        nodes: {
+            default: () => { return []; },
+            type: cc.Node
         }
     },
 
@@ -20,11 +20,15 @@ cc.Class({
 
     onButtonClicked: function () {
         if (this.label.string === 'Disabled') {
-            this.body.enabled = false;
+            this.nodes.forEach(node => {
+                node.active = false;  
+            });
             this.label.string = 'Enabled';
         }
         else if (this.label.string === 'Enabled') {
-            this.body.enabled = true;
+            this.nodes.forEach(node => {
+                node.active = true;  
+            });
             this.label.string = 'Disabled';
         }
     }
