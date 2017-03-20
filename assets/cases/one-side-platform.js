@@ -28,16 +28,16 @@ cc.Class({
         for (let i = 0; i < points.length; i++) {
             let pointVelPlatform = platformBody.getLinearVelocityFromWorldPoint( points[i] );
             let pointVelOther = otherBody.getLinearVelocityFromWorldPoint( points[i] );
-            let relativeVel = platformBody.getLocalVector( pointVelOther - pointVelPlatform );
+            let relativeVel = platformBody.getLocalVector( pointVelOther.sub(pointVelPlatform) );
             
-            if ( relativeVel.y < -1 ) //if moving down faster than 1 m/s, handle as before
+            if ( relativeVel.y < -32 ) //if moving down faster than 32 pixel/s (1m/s), handle as before
                 return;  //point is moving into platform, leave contact solid and exit
-            else if ( relativeVel.y < 1 ) { //if moving slower than 1 m/s
+            else if ( relativeVel.y < 32 ) { //if moving slower than 32 pixel/s (1m/s)
                 //borderline case, moving only slightly out of platform
                 let relativePoint = platformBody.getLocalPoint( points[i] );
-                let platformFaceY = 0.5;  //front of platform, from fixture definition :(
-                if ( relativePoint.y > platformFaceY - 0.05 )
-                    return;  //contact point is less than 5cm inside front face of platfrom
+                let platformFaceY = selfCollider.getAABB().height / 2;  //front of platform
+                if ( relativePoint.y > platformFaceY - 0.05*32 )
+                    return;  //contact point is less than 1.6pixel (5cm) inside front face of platfrom
             }
             else {
                 //moving up faster than 1 m/s
