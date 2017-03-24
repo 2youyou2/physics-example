@@ -35,9 +35,9 @@ cc.Class({
             else if ( relativeVel.y < 32 ) { //if moving slower than 32 pixel/s (1m/s)
                 //borderline case, moving only slightly out of platform
                 let relativePoint = platformBody.getLocalPoint( points[i] );
-                let platformFaceY = selfCollider.getAABB().height / 2;  //front of platform
-                if ( relativePoint.y > platformFaceY - 0.05*32 )
-                    return;  //contact point is less than 1.6pixel (5cm) inside front face of platfrom
+                let platformFaceY = selfCollider.getAABB().height / 2;  //front of platform, should only used on a box collider
+                if ( relativePoint.y > platformFaceY - 0.1*32 )
+                    return;  //contact point is less than 3.2pixel (10cm) inside front face of platfrom
             }
             else {
                 //moving up faster than 1 m/s
