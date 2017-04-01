@@ -34,10 +34,6 @@
             {
               "frame": 1.1666666666666667,
               "value": 0
-            },
-            {
-              "frame": 1.5,
-              "value": 0
             }
           ],
           "scaleY": [
@@ -47,10 +43,6 @@
             },
             {
               "frame": 1.1666666666666667,
-              "value": 0
-            },
-            {
-              "frame": 1.5,
               "value": 0
             }
           ],
@@ -62,6 +54,20 @@
             {
               "frame": 1,
               "value": 720
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": false
             }
           ]
         },
@@ -93,10 +99,6 @@
             {
               "frame": 1.1666666666666667,
               "value": 0
-            },
-            {
-              "frame": 1.5,
-              "value": 0
             }
           ],
           "scaleY": [
@@ -106,10 +108,6 @@
             },
             {
               "frame": 1.1666666666666667,
-              "value": 0
-            },
-            {
-              "frame": 1.5,
               "value": 0
             }
           ],
@@ -121,6 +119,20 @@
             {
               "frame": 1,
               "value": 720
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": false
             }
           ]
         },
@@ -152,10 +164,6 @@
             {
               "frame": 1.1666666666666667,
               "value": 0
-            },
-            {
-              "frame": 1.5,
-              "value": 0
             }
           ],
           "scaleY": [
@@ -165,10 +173,6 @@
             },
             {
               "frame": 1.1666666666666667,
-              "value": 0
-            },
-            {
-              "frame": 1.5,
               "value": 0
             }
           ],
@@ -180,6 +184,20 @@
             {
               "frame": 1,
               "value": 720
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": false
             }
           ]
         },

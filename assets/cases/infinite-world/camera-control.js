@@ -26,7 +26,6 @@ cc.Class({
         this.node.position = this.node.parent.convertToNodeSpaceAR(targetPos);
         
         let ratio = targetPos.y / cc.winSize.height;
-
         this.camera.zoomRatio = 1 + (0.5 - ratio) * 0.5;
     },
 });

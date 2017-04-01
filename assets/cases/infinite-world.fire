@@ -189,7 +189,7 @@
         "__id__": 6
       }
     ],
-    "zoom": 1
+    "zoomRatio": 1
   },
   {
     "__type__": "cc.Node",

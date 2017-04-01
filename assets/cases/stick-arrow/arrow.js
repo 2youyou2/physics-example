@@ -4,8 +4,9 @@
 cc.Class({
     extends: cc.Component,
 
-    onPostSolve: function (contact, selfCollider, otherCollider, impulse) {
-        if (impulse.normalImpulses[0] < 1) return;
+    onPostSolve: function (contact, selfCollider, otherCollider) {
+        var impulse = contact.getImpulse();
+        if (impulse.normalImpulses[0] < cc.PhysicsManager.PTM_RATIO) return;
         
         let colliderA = contact.colliderA;
         let colliderB = contact.colliderB;

@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "one-size-platform",
+  "_name": "one-side-platform",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 2,
@@ -68,15 +68,15 @@
           "y": [
             {
               "frame": 0,
-              "value": 31
+              "value": 20
             },
             {
               "frame": 1,
-              "value": 143
+              "value": 155
             },
             {
               "frame": 2,
-              "value": 31
+              "value": 20
             }
           ]
         }

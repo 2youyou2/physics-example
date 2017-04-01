@@ -6,12 +6,20 @@ cc.Class({
     properties: {
         gravityForce: 500
     },
+
+    onLoad: function () {
+        this._position = cc.v2();
+        this._center = cc.v2();
+    },
     
     _applyForce: function (body) {
-        let position = body.getWorldPosition();
-        let center = this.body.getWorldPosition();
+        let position = this._position;
+        let center = this._center;
 
-        let f = center.sub( position ).normalize().mul(this.gravityForce * body.mass);
+        body.getWorldPosition(position);
+        this.body.getWorldPosition(center);
+
+        let f = center.subSelf( position ).normalizeSelf().mulSelf(this.gravityForce * body.mass);
 
         body.applyForce(f, position, false);
     }
