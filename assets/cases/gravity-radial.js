@@ -1,10 +1,10 @@
-let Gravity = require('./gravity');
+let Gravity = require('gravity');
 
 cc.Class({
     extends: Gravity,
 
     properties: {
-        gravityForce: 500
+        gravityForce: 500,
     },
 
     onLoad: function () {
@@ -19,7 +19,7 @@ cc.Class({
         body.getWorldPosition(position);
         this.body.getWorldPosition(center);
 
-        let f = center.subSelf( position ).normalizeSelf().mulSelf(this.gravityForce * body.mass);
+        let f = center.subSelf( position ).normalizeSelf().mulSelf(this.gravityForce * body.getMass());
 
         body.applyForce(f, position, false);
     }

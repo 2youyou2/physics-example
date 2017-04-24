@@ -218,8 +218,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.Node",
@@ -321,8 +320,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.Node",
@@ -424,8 +422,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.Canvas",
@@ -488,6 +485,9 @@
       },
       {
         "__id__": 18
+      },
+      {
+        "__id__": 19
       }
     ],
     "_prefab": null,
@@ -517,8 +517,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 115,
-      "y": 63
+      "x": 183,
+      "y": 140
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -589,8 +589,31 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
+  },
+  {
+    "__type__": "cc.WeldJoint",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 15
+    },
+    "_enabled": false,
+    "anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "connectedAnchor": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "connectedBody": null,
+    "collideConnected": false,
+    "referenceAngle": 0,
+    "_frequency": 0,
+    "_dampingRatio": 0
   },
   {
     "__type__": "f1da5Mv4hpN2Zx3pmtKOGSd",

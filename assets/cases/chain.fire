@@ -215,6 +215,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -235,9 +236,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -395,7 +394,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -443,6 +442,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -467,9 +467,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -479,10 +477,6 @@
       "__id__": 9
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 14
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -493,13 +487,17 @@
       "x": 0,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 14
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.RigidBody",
@@ -521,6 +519,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -582,7 +581,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -630,6 +629,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -654,9 +654,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -666,10 +664,6 @@
       "__id__": 15
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 11
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -680,13 +674,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 11
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -747,7 +745,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -795,6 +793,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -819,9 +818,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -831,10 +828,6 @@
       "__id__": 20
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 17
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -845,13 +838,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 17
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -912,7 +909,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -960,6 +957,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -984,9 +982,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -996,10 +992,6 @@
       "__id__": 25
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 22
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1010,13 +1002,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 22
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -1077,7 +1073,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -1125,6 +1121,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -1149,9 +1146,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -1161,10 +1156,6 @@
       "__id__": 30
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 27
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1175,13 +1166,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 27
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -1242,7 +1237,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -1290,6 +1285,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -1314,9 +1310,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -1326,10 +1320,6 @@
       "__id__": 35
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 32
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1340,13 +1330,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 32
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -1407,7 +1401,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -1455,6 +1449,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -1479,9 +1474,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -1491,10 +1484,6 @@
       "__id__": 40
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 37
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1505,13 +1494,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 37
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -1572,7 +1565,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -1620,6 +1613,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -1644,9 +1638,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -1656,10 +1648,6 @@
       "__id__": 45
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 42
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1670,13 +1658,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 42
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -1737,7 +1729,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -1785,6 +1777,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -1809,9 +1802,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -1821,10 +1812,6 @@
       "__id__": 50
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 47
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1835,13 +1822,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 47
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -1902,7 +1893,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -1950,6 +1941,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -1974,9 +1966,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -1986,10 +1976,6 @@
       "__id__": 55
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 52
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2000,13 +1986,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 52
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Node",
@@ -2067,7 +2057,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 5
   },
   {
     "__type__": "cc.Sprite",
@@ -2115,6 +2105,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -2139,9 +2130,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.RevoluteJoint",
@@ -2151,10 +2140,6 @@
       "__id__": 60
     },
     "_enabled": true,
-    "connectedBody": {
-      "__id__": 57
-    },
-    "collideConnected": false,
     "anchor": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2165,13 +2150,17 @@
       "x": 30,
       "y": 0
     },
-    "referenceAngle": 0,
-    "lowerAngle": 0,
-    "upperAngle": 0,
+    "connectedBody": {
+      "__id__": 57
+    },
+    "collideConnected": false,
     "_maxMotorTorque": 0,
     "_motorSpeed": 0,
     "_enableLimit": false,
-    "_enableMotor": false
+    "_enableMotor": false,
+    "referenceAngle": 0,
+    "lowerAngle": 0,
+    "upperAngle": 0
   },
   {
     "__type__": "cc.Canvas",

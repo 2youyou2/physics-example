@@ -55,6 +55,10 @@ cc.Class({
         this.rayCastType = cc.RayCastType.Any;
     },
 
+    onAllClosestBtnClick: function () {
+        this.rayCastType = cc.RayCastType.AllClosest;
+    },
+
     onAllBtnClick: function () {
         this.rayCastType = cc.RayCastType.All;
     }

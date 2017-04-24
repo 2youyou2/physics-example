@@ -42,10 +42,9 @@ cc.Class({
         let body = node.addComponent(cc.RigidBody);
         body.type = cc.RigidBodyType.Static;
 
-        let collider = new cc.PhysicsPolygonCollider();
+        let collider = node.addComponent(cc.PhysicsPolygonCollider);
         collider.points = points;
         collider.friction = 1;
-        addComponent(node, collider);
 
         node.parent = this.node;
 

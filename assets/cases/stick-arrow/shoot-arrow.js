@@ -66,7 +66,7 @@ cc.Class({
             flightDirection.normalizeSelf();
             
             let dot = cc.pDot( flightDirection, pointingDirection );
-            let dragForceMagnitude = (1 - Math.abs(dot)) * flightSpeed * flightSpeed * dragConstant * arrowBody.mass;
+            let dragForceMagnitude = (1 - Math.abs(dot)) * flightSpeed * flightSpeed * dragConstant * arrowBody.getMass();
             
             let arrowTailPosition = arrowBody.getWorldPoint( cc.v2( -80, 0 ) );
             arrowBody.applyForce( flightDirection.mul(-dragForceMagnitude), arrowTailPosition );

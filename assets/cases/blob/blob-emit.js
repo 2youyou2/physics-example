@@ -1,4 +1,4 @@
-var Blob = require('./blob');
+var Blob = require('blob');
 
 cc.Class({
     extends: cc.Component,
@@ -29,10 +29,12 @@ cc.Class({
         var touchLoc = event.touch.getLocation();
 
         var node = cc.instantiate(this.blob);
+        var blob = node.getComponent(Blob);
+        blob.init();
+        blob.emitTo(touchLoc);
+
         node.active = true;
         cc.director.getScene().addChild(node);
-
-        node.getComponent(Blob).emitTo(touchLoc);
     },
 
     // called every frame, uncomment this function to activate update callback

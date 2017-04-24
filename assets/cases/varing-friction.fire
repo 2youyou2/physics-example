@@ -184,7 +184,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -302,
-      "y": 111
+      "y": 111.5
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -264,8 +264,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -409,8 +408,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -554,8 +552,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -699,8 +696,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -844,8 +840,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.75,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -989,8 +984,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.5,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1134,8 +1128,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.25,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1279,8 +1272,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.1,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1424,8 +1416,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1569,8 +1560,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",

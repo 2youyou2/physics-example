@@ -215,6 +215,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -247,8 +248,8 @@
     "referenceAngle": 0,
     "enableLimit": true,
     "enableMotor": false,
-    "lowerTranslation": 100,
-    "upperTranslation": 300,
+    "lowerLimit": 100,
+    "upperLimit": 300,
     "_maxMotorForce": 0,
     "_motorSpeed": 0
   },
@@ -272,6 +273,7 @@
     },
     "_angularVelocity": 0,
     "_fixedRotation": false,
+    "enabledContactListener": false,
     "bullet": false
   },
   {
@@ -382,9 +384,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "enabledContactListener": false,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",

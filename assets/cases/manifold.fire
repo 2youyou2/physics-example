@@ -81,10 +81,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 36
+        "__id__": 37
       },
       {
-        "__id__": 37
+        "__id__": 38
       }
     ],
     "_prefab": null,
@@ -957,10 +957,13 @@
       },
       {
         "__id__": 34
+      },
+      {
+        "__id__": 35
       }
     ],
     "_prefab": {
-      "__id__": 35
+      "__id__": 36
     },
     "_id": "4f6d0/32ndPxpVHdT9jWPvE",
     "_opacity": 255,
@@ -1163,6 +1166,18 @@
     "_friction": 0.2,
     "_restitution": 1,
     "body": null
+  },
+  {
+    "__type__": "fc197NwJqFAXpztnO3O1if7",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 31
+    },
+    "_enabled": true,
+    "pointTemp": {
+      "__id__": 28
+    }
   },
   {
     "__type__": "cc.PrefabInfo",

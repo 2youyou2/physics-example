@@ -4,17 +4,22 @@
 cc.Class({
     extends: cc.Component,
 
+    onLoad: function () {
+        this.weldJoint = this.getComponent(cc.WeldJoint);
+    },
+
     onPostSolve: function (contact, selfCollider, otherCollider) {
         var impulse = contact.getImpulse();
-        if (impulse.normalImpulses[0] < cc.PhysicsManager.PTM_RATIO) return;
-        
-        let colliderA = contact.colliderA;
-        let colliderB = contact.colliderB;
+        if (Math.abs(impulse.normalImpulses[0]) < cc.PhysicsManager.PTM_RATIO) return;
 
-        let weldJoint = selfCollider.body.weldJoint;
-        if (weldJoint) {
-            weldJoint.destroy();
-            selfCollider.body.weldJoint = null;
+        let joint = this.weldJoint;
+
+        if (joint.enabled) {
+            joint.enabled = false;
+            return;
+        }
+
+        if (otherCollider.node.name === 'arrow') {
             return;
         }
 
@@ -22,14 +27,11 @@ cc.Class({
         let targetBody = otherCollider.body;
         let worldCoordsAnchorPoint = arrowBody.getWorldPoint( cc.v2(0.6, 0) );
     
-        let joint = new cc.WeldJoint();
         joint.connectedBody = targetBody;
         joint.anchor = arrowBody.getLocalPoint( worldCoordsAnchorPoint );
         joint.connectedAnchor = targetBody.getLocalPoint( worldCoordsAnchorPoint );
         joint.referenceAngle = targetBody.node.rotation - arrowBody.node.rotation;
 
-        addComponent(arrowBody.node, joint);
-
-        arrowBody.weldJoint = joint;
+        joint.enabled = true;
     }
 });

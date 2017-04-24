@@ -11,7 +11,7 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad: function () {
+    init: function () {
         this.ctx = this.getComponent(cc.Graphics);
 
         this.ctx.lineWidth = 6;
@@ -32,66 +32,58 @@ cc.Class({
             let angle = (2*Math.PI)/particleNumber*i;
             let posX = particleDistance * Math.cos(angle);
             let posY = particleDistance * Math.sin(angle);
-            let sphere = this._createSphere(posX, posY, sphereSize, null, this.node);
+            let sphere = this._createSphere(posX, posY, sphereSize);
             spheres.push( sphere );
-
-            let joint = new cc.DistanceJoint();
+            
+            let joint = sphere.node.addComponent(cc.DistanceJoint);
             joint.connectedBody = spheres[0];
             joint.distance = particleDistance;
             joint.dampingRatio = 0.5;
             joint.frequency = 4;
-            addComponent(spheres[spheres.length - 1].node, joint);
 
             if (i > 0) {
                 let distanceX = posX - spheres[spheres.length - 2].node.x;
                 let distanceY = posY - spheres[spheres.length - 2].node.y;
                 let distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
 
-                joint = new cc.DistanceJoint();
+                joint = sphere.node.addComponent(cc.DistanceJoint);
                 joint.connectedBody = spheres[spheres.length - 2];
                 joint.distance = distance;
                 joint.dampingRatio = 1;
                 joint.frequency = 0;
-                addComponent(spheres[spheres.length - 1].node, joint);
             }
             if (i === particleNumber - 1) {
                 let distanceX = posX - spheres[1].node.x;
                 let distanceY = posY - spheres[1].node.y;
                 let distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
 
-                joint = new cc.DistanceJoint();
-                joint.connectedBody = spheres[spheres.length - 1];
+                joint = spheres[1].node.addComponent(cc.DistanceJoint);
+                joint.connectedBody = sphere;
                 joint.distance = distance;
                 joint.dampingRatio = 1;
                 joint.frequency = 0;
-                addComponent(spheres[1].node, joint);
             }
+
+            sphere.node.parent = this.node;
         }
 
         this.spheres = spheres;
     },
 
-    _createSphere (x, y, r, node, parent) {
+    _createSphere (x, y, r, node) {
         if (!node) {
             node = new cc.Node();
             node.x = x;
             node.y = y;
         }
 
-        if (parent) {
-            parent.addChild(node);
-        }
+        let body = node.addComponent(cc.RigidBody);
 
-        let body = new cc.RigidBody();
-        body.type = b2.Body.b2_dynamicBody;
-        addComponent(node, body);
-
-        let collider = new cc.PhysicsCircleCollider();
+        let collider = node.addComponent(cc.PhysicsCircleCollider);
         collider.density = 1;
         collider.restitution = 0.4;
         collider.friction = 0.5;
         collider.radius = r;
-        addComponent(node, collider);
 
         return body;
     },
@@ -100,10 +92,13 @@ cc.Class({
         var x = target.x;
         var y = target.y;
 
-        var distance = Math.sqrt((x-2)*(x-2) + (y-200)*(y-200));
-        var velocity = cc.v2(x-2, y-200);
-        velocity.normalize();
-        velocity.mul(distance*2);
+        var selfX = this.node.x;
+        var selfY = this.node.y;
+
+        var distance = Math.sqrt((x-selfX)*(x-selfX) + (y-selfY)*(y-selfY));
+        var velocity = cc.v2(x-selfX, y-selfY);
+        velocity.normalizeSelf();
+        velocity.mulSelf(distance*2);
 
         this.spheres.forEach(function (sphere) {
             sphere.linearVelocity = velocity;
