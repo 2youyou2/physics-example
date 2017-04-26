@@ -1,3 +1,5 @@
+// game art from : https://openpixelproject.itch.io/opp2017sprites
+
 const MOVE_LEFT = 1;
 const MOVE_RIGHT = 2;
 
