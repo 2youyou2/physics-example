@@ -254,8 +254,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.Node",
@@ -399,8 +398,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.Canvas",
@@ -430,7 +428,8 @@
       "__type__": "cc.Size",
       "width": 0,
       "height": 0
-    }
+    },
+    "mouseJoint": false
   },
   {
     "__type__": "cc.Node",

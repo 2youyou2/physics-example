@@ -3,7 +3,8 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        size: cc.size(0, 0)
+        size: cc.size(0, 0),
+        mouseJoint: true
     },
 
     // use this for initialization
@@ -16,9 +17,11 @@ cc.Class({
         let body = node.addComponent(cc.RigidBody);
         body.type = cc.RigidBodyType.Static;
 
-        // add mouse joint
-        let joint = node.addComponent(cc.MouseJoint);
-        joint.mouseRegion = this.node;
+        if (this.mouseJoint) {
+            // add mouse joint
+            let joint = node.addComponent(cc.MouseJoint);
+            joint.mouseRegion = this.node;    
+        }
         
         this._addBound(node, 0, height/2, width, 20);
         this._addBound(node, 0, -height/2, width, 20);

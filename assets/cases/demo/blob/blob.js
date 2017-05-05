@@ -6,7 +6,7 @@ cc.Class({
 
     properties: {
         particleNumber: 12,
-        particleDistance: 32,
+        particleRadius: 30,
         sphereSize: 12
     },
 
@@ -22,44 +22,40 @@ cc.Class({
         let y = this.node.y;
 
         let particleNumber = this.particleNumber;
-        let particleDistance = this.particleDistance;
+        let particleRadius = this.particleRadius;
         let sphereSize = this.sphereSize;
+
+        let particleAngle = (2*Math.PI)/particleNumber;
+        let particleDistance = Math.sin(particleAngle) * particleRadius * Math.sin((Math.PI - particleAngle)/2);
 
         let spheres = [];
         spheres.push( this._createSphere(0, 0, sphereSize, this.node) );
 
         for (let i=0; i<particleNumber; i++) {
-            let angle = (2*Math.PI)/particleNumber*i;
-            let posX = particleDistance * Math.cos(angle);
-            let posY = particleDistance * Math.sin(angle);
+            let angle = particleAngle*i;
+            let posX = particleRadius * Math.cos(angle);
+            let posY = particleRadius * Math.sin(angle);
             let sphere = this._createSphere(posX, posY, sphereSize);
             spheres.push( sphere );
             
             let joint = sphere.node.addComponent(cc.DistanceJoint);
             joint.connectedBody = spheres[0];
-            joint.distance = particleDistance;
+            joint.distance = particleRadius;
             joint.dampingRatio = 0.5;
             joint.frequency = 4;
 
             if (i > 0) {
-                let distanceX = posX - spheres[spheres.length - 2].node.x;
-                let distanceY = posY - spheres[spheres.length - 2].node.y;
-                let distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
-
                 joint = sphere.node.addComponent(cc.DistanceJoint);
                 joint.connectedBody = spheres[spheres.length - 2];
-                joint.distance = distance;
+                joint.distance = particleDistance;
                 joint.dampingRatio = 1;
                 joint.frequency = 0;
             }
-            if (i === particleNumber - 1) {
-                let distanceX = posX - spheres[1].node.x;
-                let distanceY = posY - spheres[1].node.y;
-                let distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
 
+            if (i === particleNumber - 1) {
                 joint = spheres[1].node.addComponent(cc.DistanceJoint);
                 joint.connectedBody = sphere;
-                joint.distance = distance;
+                joint.distance = particleDistance;
                 joint.dampingRatio = 1;
                 joint.frequency = 0;
             }

@@ -34,7 +34,7 @@ cc.Class({
         blob.emitTo(touchLoc);
 
         node.active = true;
-        cc.director.getScene().addChild(node);
+        node.parent = cc.director.getScene();
     },
 
     // called every frame, uncomment this function to activate update callback

@@ -452,7 +452,8 @@
       "__type__": "cc.Size",
       "width": 0,
       "height": 0
-    }
+    },
+    "mouseJoint": false
   },
   {
     "__type__": "6ac60G/olhOy7Kbp3Jz4Kon",

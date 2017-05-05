@@ -136,7 +136,8 @@
       "__type__": "cc.Size",
       "width": 0,
       "height": 0
-    }
+    },
+    "mouseJoint": false
   },
   {
     "__type__": "11e48Geo5JDBIVpJkHK7DFw",
@@ -296,7 +297,7 @@
     },
     "_enabled": true,
     "particleNumber": 12,
-    "particleDistance": 30,
+    "particleRadius": 30,
     "sphereSize": 12
   },
   {
