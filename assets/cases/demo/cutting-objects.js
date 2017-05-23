@@ -227,7 +227,7 @@ cc.Class({
                 indiceIndex1 = indices.indexOf(index1);
                 indiceIndex2 = indices.indexOf(index2);
 
-                if (indiceIndex1 !== -1 && indiceIndex1 !== -1) {
+                if (indiceIndex1 !== -1 && indiceIndex2 !== -1) {
                     splitResult = splitResults.splice(i, 1)[0];
                     break;
                 }
