@@ -1,9 +1,14 @@
 const Polyglot = require('polyglot');
+
 let lang = cc.sys.language;
-if (lang !== 'zh') {
-    lang = 'en';
+let data;
+if (lang === 'zh') {
+    data = require('zh');
 }
-let data = require(lang); // update this to set your default displaying language in editor
+else {
+    data = require('en');
+}
+
 // let polyglot = null;
 let polyglot = new Polyglot({phrases: data, allowMissing: true});
 
