@@ -836,6 +836,7 @@
       "__type__": "cc.Size",
       "width": 0,
       "height": 0
-    }
+    },
+    "mouseJoint": true
   }
 ]

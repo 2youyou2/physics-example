@@ -261,8 +261,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "b5747o+SsRLR6PWbHULtK4Z",
@@ -272,7 +271,7 @@
       "__id__": 3
     },
     "_enabled": true,
-    "tangentSpeed": 5
+    "tangentSpeed": 160
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -419,8 +418,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "b5747o+SsRLR6PWbHULtK4Z",
@@ -430,7 +428,7 @@
       "__id__": 9
     },
     "_enabled": true,
-    "tangentSpeed": 5
+    "tangentSpeed": 160
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -577,8 +575,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "b5747o+SsRLR6PWbHULtK4Z",
@@ -588,7 +585,7 @@
       "__id__": 15
     },
     "_enabled": true,
-    "tangentSpeed": 5
+    "tangentSpeed": 160
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -735,8 +732,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "b5747o+SsRLR6PWbHULtK4Z",
@@ -746,7 +742,7 @@
       "__id__": 21
     },
     "_enabled": true,
-    "tangentSpeed": 5
+    "tangentSpeed": 160
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -890,8 +886,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1035,8 +1030,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1180,8 +1174,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1325,8 +1318,7 @@
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
-    "_restitution": 0,
-    "body": null
+    "_restitution": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1367,6 +1359,7 @@
       "__type__": "cc.Size",
       "width": 0,
       "height": 0
-    }
+    },
+    "mouseJoint": true
   }
 ]
