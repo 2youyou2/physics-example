@@ -11,7 +11,7 @@ cc.Class({
 
         let body = otherCollider.body;
         body.linearVelocity = cc.v2();
-        body.applyLinearImpulse(this.impulse, body.getWorldCenter());
+        body.applyLinearImpulse(this.impulse, body.getWorldCenter(), true);
     },
 
     // use this for initialization
