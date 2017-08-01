@@ -69,7 +69,7 @@ cc.Class({
             let dragForceMagnitude = (1 - Math.abs(dot)) * flightSpeed * flightSpeed * dragConstant * arrowBody.getMass();
             
             let arrowTailPosition = arrowBody.getWorldPoint( cc.v2( -80, 0 ) );
-            arrowBody.applyForce( flightDirection.mul(-dragForceMagnitude), arrowTailPosition );
+            arrowBody.applyForce( flightDirection.mul(-dragForceMagnitude), arrowTailPosition, false );
         }
     },
 });
