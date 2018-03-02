@@ -60,7 +60,6 @@ cc.Class({
         let numberOfSlices = hillWidth/pixelStep;
 
         let j;
-        let points = [];
 
         // first step
         let randomHeight;
@@ -74,7 +73,7 @@ cc.Class({
         yOffset += randomHeight;
 
         for (j = 0; j < numberOfSlices/2; j++) {
-            points.length = 0;
+            let points = [];
             points.push( cc.v2( 0,     0) );
             points.push( cc.v2( 0,     yOffset - randomHeight*Math.cos(2*Math.PI/numberOfSlices*j)) );
             points.push( cc.v2( pixelStep, yOffset - randomHeight*Math.cos(2*Math.PI/numberOfSlices*(j+1))) );
@@ -96,7 +95,7 @@ cc.Class({
         yOffset -= randomHeight;
 
         for (j = numberOfSlices/2; j < numberOfSlices; j++) {
-            points.length = 0;
+            let points = [];
             points.push( cc.v2( 0,     0) );
             points.push( cc.v2( 0,     yOffset - randomHeight*Math.cos(2*Math.PI/numberOfSlices*j)) );
             points.push( cc.v2( pixelStep, yOffset - randomHeight*Math.cos(2*Math.PI/numberOfSlices*(j+1))) );
