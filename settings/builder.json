@@ -1,14 +1,17 @@
 {
   "appKey": "",
   "appSecret": "",
+  "encryptJs": true,
   "excludeScenes": [],
   "includeAnySDK": false,
-  "includeSdk": [
-    "anysdk"
-  ],
+  "includeSDKBox": false,
   "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
   "mergeStartScene": false,
   "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
     "landscapeRight": true,
@@ -20,5 +23,11 @@
   "renderMode": "0",
   "startScene": "d13475c7-b37e-45d6-b6c5-25929e8a0925",
   "title": "physics_example",
-  "webOrientation": "auto"
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "wx7ed7a33962154a99",
+    "orientation": "landscape"
+  },
+  "xxteaKey": "66fd1fc4-d8af-41",
+  "zipCompressJs": true
 }

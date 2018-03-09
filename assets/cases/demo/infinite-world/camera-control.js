@@ -13,13 +13,6 @@ cc.Class({
         this.camera = this.getComponent(cc.Camera);
     },
 
-    onEnable: function () {
-        cc.director.getPhysicsManager().attachDebugDrawToCamera(this.camera);
-    },
-    onDisable: function () {
-        cc.director.getPhysicsManager().detachDebugDrawFromCamera(this.camera);
-    },
-
     // called every frame, uncomment this function to activate update callback
     lateUpdate: function (dt) {
         let targetPos = this.target.convertToWorldSpaceAR(cc.Vec2.ZERO);

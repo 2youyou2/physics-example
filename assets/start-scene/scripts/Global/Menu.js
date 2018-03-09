@@ -32,6 +32,11 @@ cc.Class({
         testList: {
             default: null,
             type: cc.ScrollView
+        },
+
+        uiCamera: {
+            default: null,
+            type: cc.Camera
         }
     },
 
@@ -50,6 +55,21 @@ cc.Class({
             // in main scene
             this.sceneList = this.testList.content.getComponent('SceneList');
             this.sceneList.init(this);
+        }
+
+        cc.director.on(cc.Director.EVENT_AFTER_SCENE_LAUNCH, this._onSceneLaunched, this);
+    },
+
+    _onSceneLaunched () {
+        let cameras = cc.Camera.cameras;
+        for (let i = 0, l = cameras.length; i < l; i++) {
+            let camera = cameras[i];
+            if (camera === this.uiCamera) {
+                camera.cullingMask = 1 << this.node.groupIndex;
+            }
+            else {
+                camera.cullingMask = camera.cullingMask & (~(1 << this.node.groupIndex));
+            }
         }
     },
     
