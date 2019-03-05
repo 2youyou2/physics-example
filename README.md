@@ -1,6 +1,13 @@
 # Physics Example
 Online demo : http://2youyou2.com/physics-example/
 
+# Branch
+Please checkout the right branch according to your Cocos Creator version.
+
+- Master is for Cocos Creator newest version.
+- V1.0-release is for Cocos Creator v1.x.
+- V2.0-release is for Cocos Creator v2.x.
+
 # Screenshots
 
 ![image](https://user-images.githubusercontent.com/1862402/32927573-4be9f2c2-cb88-11e7-9fff-1d2214dd51c8.png)
