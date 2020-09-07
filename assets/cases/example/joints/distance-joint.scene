@@ -163,7 +163,7 @@
     "_id": "b4+KN6hyZE8qax11rrrYr8"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -189,7 +189,7 @@
     "_id": "40b/tUtnVB4aQF3MgAO2bh"
   },
   {
-    "__type__": "MouseJoint2D",
+    "__type__": "cc.MouseJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -391,7 +391,7 @@
     "_id": "2bhONDl55ORYFoqzP+MvS1"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -417,7 +417,7 @@
     "_id": "bePGB8OgJD0ax5TXr8RcRl"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -564,7 +564,7 @@
     "_id": "76Qck9XUFAX4T68S8iZ2/U"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -590,7 +590,7 @@
     "_id": "72F8aPN2xBnJJiMhuIg8NO"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -610,7 +610,7 @@
     "_id": "baLeLNNvBG96T7lwY9VeDM"
   },
   {
-    "__type__": "DistanceJoint2D",
+    "__type__": "cc.DistanceJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -938,7 +938,7 @@
     "_id": "b8IR4IglBHF4taYTcvD0iE"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -964,7 +964,7 @@
     "_id": "f7XC7F7RVFXYapAvIptVe3"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1111,7 +1111,7 @@
     "_id": "4d08zP+EVNg5H4h2pHbs7V"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1137,7 +1137,7 @@
     "_id": "b8qY5pypRKPrA2QlbkL3w2"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1157,7 +1157,7 @@
     "_id": "a3zOgvXIBF77WVYjugG0jF"
   },
   {
-    "__type__": "DistanceJoint2D",
+    "__type__": "cc.DistanceJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1485,7 +1485,7 @@
     "_id": "a5CQ1qSdpPWbKJLbP3Ikw5"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1511,7 +1511,7 @@
     "_id": "0ccmx264RPpqE2gtFW+kDv"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1658,7 +1658,7 @@
     "_id": "a2Gya1Vv1C5rl4abOPbkLn"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1684,7 +1684,7 @@
     "_id": "3a9P4zrmVPhKyeXs6/htW3"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1704,7 +1704,7 @@
     "_id": "aeQGEtHC1A84Dt3Fbcq4jh"
   },
   {
-    "__type__": "DistanceJoint2D",
+    "__type__": "cc.DistanceJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2032,7 +2032,7 @@
     "_id": "6bYeo+5o5HTrLOvOta0VWh"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2058,7 +2058,7 @@
     "_id": "75dEHW6aVGQZXhPZhQ13so"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2205,7 +2205,7 @@
     "_id": "b2ZLiyN0RF5L22Eor64SzU"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2231,7 +2231,7 @@
     "_id": "d7M2C1e2ZFIJnph7paGaYC"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2251,7 +2251,7 @@
     "_id": "69xpz1YktANai7lIBHePAu"
   },
   {
-    "__type__": "DistanceJoint2D",
+    "__type__": "cc.DistanceJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {

@@ -172,7 +172,7 @@
     "_id": "8fmgIUF51DO5RcqGUwhUIq"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -198,7 +198,7 @@
     "_id": "f05OOM68hOtKE2Lo21oGh9"
   },
   {
-    "__type__": "MouseJoint2D",
+    "__type__": "cc.MouseJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -347,7 +347,7 @@
     "_id": "3c5ZAIWHNAWo13gqucZHmV"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -373,7 +373,7 @@
     "_id": "6cRNolM7tBB5dYmcAugoIB"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -518,7 +518,7 @@
     "_id": "c4KcQ0QZZJCaA5QL4p8fc+"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -544,7 +544,7 @@
     "_id": "a5fsrUsHFKt7IlQFbMnifG"
   },
   {
-    "__type__": "BoxCollider2D",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -568,7 +568,7 @@
     "_id": "7elZjYTIpDrbDLbYs0x+oZ"
   },
   {
-    "__type__": "HingeJoint2D",
+    "__type__": "cc.HingeJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -711,7 +711,7 @@
     "_id": "43TH5iwe9Fpru3Tae5B+xy"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -737,7 +737,7 @@
     "_id": "edtFrDcq9KQrKk4JEfPZQZ"
   },
   {
-    "__type__": "BoxCollider2D",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -761,7 +761,7 @@
     "_id": "531xXThlpG9qN6dezlku2C"
   },
   {
-    "__type__": "HingeJoint2D",
+    "__type__": "cc.HingeJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -904,7 +904,7 @@
     "_id": "a0W4oTDSNJ6L40pfjOaWj8"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -930,7 +930,7 @@
     "_id": "c9Oxdf+FtNfb6jyR14wwRZ"
   },
   {
-    "__type__": "BoxCollider2D",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -954,7 +954,7 @@
     "_id": "d4T+ySOC5HzZDNV0QtR5D0"
   },
   {
-    "__type__": "HingeJoint2D",
+    "__type__": "cc.HingeJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1097,7 +1097,7 @@
     "_id": "des/AN26FHq4AhbEQE0itw"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1123,7 +1123,7 @@
     "_id": "17yC5khhVE+Y9pyh846swK"
   },
   {
-    "__type__": "BoxCollider2D",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1147,7 +1147,7 @@
     "_id": "b48IMwRfhCZr0+Ay09ZGw9"
   },
   {
-    "__type__": "HingeJoint2D",
+    "__type__": "cc.HingeJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1290,7 +1290,7 @@
     "_id": "6dSX0jh39JNJkqknPjKFOu"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1316,7 +1316,7 @@
     "_id": "59IQ+fcHlFO5Euld2yZHMV"
   },
   {
-    "__type__": "BoxCollider2D",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1340,7 +1340,7 @@
     "_id": "fbAg9U0lRJ55DERe3giTxd"
   },
   {
-    "__type__": "HingeJoint2D",
+    "__type__": "cc.HingeJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1483,7 +1483,7 @@
     "_id": "65gZjDVQdNzbsRryZY1u1f"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1509,7 +1509,7 @@
     "_id": "8bFDa2RVdPuYIg1OQqXkXH"
   },
   {
-    "__type__": "BoxCollider2D",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1533,7 +1533,7 @@
     "_id": "60AUcxeqJH3r7mNwQuUxQB"
   },
   {
-    "__type__": "HingeJoint2D",
+    "__type__": "cc.HingeJoint2D",
     "_name": "",
     "_objFlags": 0,
     "node": {

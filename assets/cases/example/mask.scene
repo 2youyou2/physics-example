@@ -197,7 +197,7 @@
     "_id": "5eu8QNzzNCNoE1ZyT2NlGU"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -222,7 +222,7 @@
     "_id": "38NMgIwyZFPoYY78Ir0r8f"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -369,7 +369,7 @@
     "_id": "2bCgMMxgdF1aOT5dZAe7jq"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -394,7 +394,7 @@
     "_id": "bc5AtPZAhKI65kvVAK729n"
   },
   {
-    "__type__": "CircleCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -541,7 +541,7 @@
     "_id": "59mv4C9AFAlr7A9n/eCdOb"
   },
   {
-    "__type__": "RigidBody2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -566,7 +566,7 @@
     "_id": "a910GEDAtFG4t7u9erbKwI"
   },
   {
-    "__type__": "BoxCollider2D",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
