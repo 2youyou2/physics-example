@@ -7,13 +7,13 @@ export class Gravity extends Component {
 
     collider: Collider2D;
     bodies: RigidBody2D[];
-    originGravity: Vec2;
+    originGravity = new Vec2;
 
     onEnable () {
         this.bodies = [];
         this.collider = this.getComponent(Collider2D);
-        this.originGravity = PhysicsSystem2D.instance.gravity;
-        PhysicsSystem2D.instance.gravity = new Vec2;
+        this.originGravity.set(PhysicsSystem2D.instance.gravity);
+        PhysicsSystem2D.instance.gravity = Vec2.ZERO;
 
         this.collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
         this.collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);

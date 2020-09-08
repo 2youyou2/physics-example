@@ -33,7 +33,7 @@ export class OneWayPlatform extends Component {
             else if (relativeVel.y < 1 * PHYSICS_2D_PTM_RATIO) { //if moving slower than PHYSICS_2D_PTM_RATIO pixel/s (1m/s)
                 //borderline case, moving only slightly out of platform
                 platformBody.getLocalPoint(points[i], relativePoint);
-                let platformFaceY = selfCollider.getWorldAABB().height / 2;  //front of platform, should only used on a box collider
+                let platformFaceY = selfCollider.worldAABB.height / 2;  //front of platform, should only used on a box collider
                 if (relativePoint.y > platformFaceY - 0.1 * PHYSICS_2D_PTM_RATIO)
                     return;  //contact point is less than 3.2pixel (10cm) inside front face of platfrom
             }
