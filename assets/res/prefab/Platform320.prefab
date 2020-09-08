@@ -130,7 +130,7 @@
     "_enabled": true,
     "bullet": false,
     "awakeOnLoad": true,
-    "_group": 1073741824,
+    "_group": 1,
     "_type": 0,
     "_allowSleep": true,
     "_gravityScale": 1,
