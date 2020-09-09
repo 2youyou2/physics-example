@@ -1,0 +1,16 @@
+{
+  "ver": "4.0.1",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "b20ed616-639a-4ca3-abfd-9efa57c03b1b",
+  "files": [
+    ".js",
+    ".trans"
+  ],
+  "subMetas": {},
+  "userData": {
+    "importAsPlugin": false,
+    "moduleId": "project:///assets/main-menu/scripts/backbutton.js",
+    "importerSettings": 0
+  }
+}
