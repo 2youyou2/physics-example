@@ -20,6 +20,7 @@
       "physics-framework",
       "physics-2d-box2d",
       "physics-2d-framework",
+      "intersection-2d",
       "audio",
       "tween",
       "terrain"
