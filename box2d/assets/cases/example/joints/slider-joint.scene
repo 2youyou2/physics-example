@@ -202,9 +202,9 @@
     },
     "collideConnected": false,
     "connectedBody": null,
-    "_frequency": 5,
-    "_dampingRatio": 0.7,
     "_maxForce": 1000,
+    "_dampingRatio": 0.7,
+    "_frequency": 5,
     "_id": "42kirWLWlM/4hn/Ceitd54"
   },
   {
@@ -368,6 +368,8 @@
       "__id__": 8
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -406,14 +408,14 @@
     "connectedBody": {
       "__id__": 14
     },
-    "_angle": 0.720423326979105,
+    "_angle": 90,
     "_autoCalcAngle": true,
     "_enableMotor": true,
     "_maxMotorForce": 1000,
     "_motorSpeed": 1000,
     "_enableLimit": true,
     "_lowerLimit": 0,
-    "_upperLimit": 300,
+    "_upperLimit": 250,
     "_id": "5am//0zKpBf64EZCb1Cvcc"
   },
   {
@@ -562,6 +564,8 @@
       "__id__": 15
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -649,17 +653,14 @@
     "ambient": {
       "__id__": 24
     },
-    "planarShadows": {
+    "shadows": {
       "__id__": 25
     },
-    "shadowMap": {
+    "_skybox": {
       "__id__": 26
     },
-    "_skybox": {
-      "__id__": 27
-    },
     "fog": {
-      "__id__": 28
+      "__id__": 27
     }
   },
   {
@@ -681,7 +682,8 @@
     }
   },
   {
-    "__type__": "cc.PlanarShadowInfo",
+    "__type__": "cc.ShadowsInfo",
+    "_type": 0,
     "_enabled": false,
     "_normal": {
       "__type__": "cc.Vec3",
@@ -696,11 +698,8 @@
       "g": 0,
       "b": 0,
       "a": 76
-    }
-  },
-  {
-    "__type__": "cc.ShadowInfo",
-    "_enabled": false,
+    },
+    "_pcf": 0,
     "_near": 1,
     "_far": 30,
     "_aspect": 1,

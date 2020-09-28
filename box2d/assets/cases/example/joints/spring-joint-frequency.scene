@@ -199,9 +199,9 @@
     },
     "collideConnected": false,
     "connectedBody": null,
-    "_frequency": 5,
-    "_dampingRatio": 0.7,
     "_maxForce": 100,
+    "_dampingRatio": 0.7,
+    "_frequency": 5,
     "_id": "1bRkPgb19CppHxDj6Qa0EK"
   },
   {
@@ -411,6 +411,8 @@
       "__id__": 8
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -467,7 +469,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -584,6 +586,8 @@
       "__id__": 14
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -624,8 +628,8 @@
     },
     "_frequency": 0.3,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "a6S0P7wFBO84J8eCRhUq3l"
   },
   {
@@ -939,6 +943,8 @@
       "__id__": 25
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -995,7 +1001,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -1112,6 +1118,8 @@
       "__id__": 31
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -1152,8 +1160,8 @@
     },
     "_frequency": 0.5,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "ccAApOULFFmZLXf7KqX4Tl"
   },
   {
@@ -1467,6 +1475,8 @@
       "__id__": 42
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -1523,7 +1533,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -1640,6 +1650,8 @@
       "__id__": 48
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -1680,8 +1692,8 @@
     },
     "_frequency": 0.7,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "b3wzV/NXpHXqkm5uK8Tf2A"
   },
   {
@@ -1995,6 +2007,8 @@
       "__id__": 59
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -2051,7 +2065,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -2168,6 +2182,8 @@
       "__id__": 65
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -2208,8 +2224,8 @@
     },
     "_frequency": 0.8,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "c3/jKNZrVNfrkxICMruObi"
   },
   {
@@ -2523,6 +2539,8 @@
       "__id__": 76
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -2579,7 +2597,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -2696,6 +2714,8 @@
       "__id__": 82
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -2736,8 +2756,8 @@
     },
     "_frequency": 0.9,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "beD5wpG2FFro2hZin+vhrG"
   },
   {
@@ -3051,6 +3071,8 @@
       "__id__": 93
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -3107,7 +3129,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -3224,6 +3246,8 @@
       "__id__": 99
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -3264,8 +3288,8 @@
     },
     "_frequency": 1.5,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "bcIT5tY7hMn4hdoM6tQKe6"
   },
   {
@@ -3579,6 +3603,8 @@
       "__id__": 110
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -3635,7 +3661,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -3752,6 +3778,8 @@
       "__id__": 116
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -3792,8 +3820,8 @@
     },
     "_frequency": 2,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "2aARxRq6BAwJxexwHq2Eoi"
   },
   {
@@ -4107,6 +4135,8 @@
       "__id__": 127
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -4163,7 +4193,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -4280,6 +4310,8 @@
       "__id__": 133
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -4320,8 +4352,8 @@
     },
     "_frequency": 5,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "4dys+9qCBJxbBUqDpMe9SR"
   },
   {
@@ -4635,6 +4667,8 @@
       "__id__": 144
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -4691,7 +4725,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -4808,6 +4842,8 @@
       "__id__": 150
     },
     "_enabled": true,
+    "tag": 0,
+    "_group": 1,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -4848,8 +4884,8 @@
     },
     "_frequency": 0,
     "_dampingRatio": 0,
-    "_distance": 10,
-    "_autoCalcDistance": true,
+    "_distance": 250,
+    "_autoCalcDistance": false,
     "_id": "b16Fnhl9lKPYtiFxWx32Uz"
   },
   {
