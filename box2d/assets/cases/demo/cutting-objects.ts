@@ -1,5 +1,5 @@
 import { _decorator, Component, Node, find, SystemEventType, Graphics, Vec2, Touch, PhysicsSystem2D, ERaycast2DType, RaycastResult2D, Intersection2D, director, RigidBody2D, PolygonCollider2D, Vec3 } from 'cc';
-const { ccclass, property } = _decorator;
+const { ccclass, type } = _decorator;
 
 // http://www.emanueleferonato.com/2011/08/05/slicing-splitting-and-cutting-objects-with-box2d-part-4-using-real-graphics/
 
@@ -29,6 +29,7 @@ function pointInLine (point: Vec2, a: Vec2, b: Vec2) {
 export class CuttingObjects extends Component {
 
     touching = false;
+    @type(Graphics)
     ctx: Graphics = null;
 
     touchStartPoint = new Vec2;
@@ -43,7 +44,6 @@ export class CuttingObjects extends Component {
         this.node.on(SystemEventType.TOUCH_END, this.onTouchEnd, this);
         this.node.on(SystemEventType.TOUCH_MOVE, this.onTouchMove, this);
 
-        this.ctx = this.getComponent(Graphics);
         this.ctx.node.worldPosition = Vec3.ZERO;
     }
 
@@ -168,9 +168,9 @@ export class CuttingObjects extends Component {
 
                 // create new body
                 let node = new Node();
-                node.position = body.node.worldPosition;
-                node.rotation = body.node.worldRotation;
                 node.parent = this.node;
+                node.worldPosition = body.node.worldPosition;
+                node.worldRotation = body.node.worldRotation;
 
                 node.addComponent(RigidBody2D);
 
@@ -290,6 +290,8 @@ export class CuttingObjects extends Component {
         let r2 = PhysicsSystem2D.instance.raycast(point, startPoint, ERaycast2DType.All);
 
         let results = r1.concat(r2);
+
+        results = results.filter(r => r.collider instanceof PolygonCollider2D);
 
         for (let i = 0; i < results.length; i++) {
             let p = results[i].point;
